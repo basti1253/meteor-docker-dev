@@ -9,3 +9,14 @@ dev runtime when meteor isn't available on your server
 - METEOR_VERSION: 1.4.2.3
 
 usage example: check docker-compose.yml (you have to check container name and host path of your app)
+
+## usage
+
+### run command in container image:
+
+check your service name in docker-compose.yml (i.e. meteor-dev) and run
+
+```
+docker-compose run meteor-dev meteor $@
+```
+

@@ -1,10 +1,10 @@
-orga-tool:
+meteor-dev:
   image: rudygotya/meteor-dev
-  container_name: meteor
+  container_name: meteor-dev
   volumes:
   - /path/to/project/:/home/node/app/
   ports:
   - 3000:3000
-  #restart: unless-stopped
+  restart: unless-stopped
 
 
