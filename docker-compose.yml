@@ -1,5 +1,5 @@
 orga-tool:
-  image: basti1253/meteor-docker-dev
+  image: rudygotya/meteor-dev
   container_name: meteor
   volumes:
   - /path/to/project/:/home/node/app/
