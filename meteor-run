@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+set -e
+
+cd /home/$USER/app;
+
+# otherwise meteor fails to run with exit code 1
+export LANG=C;
+export LC_ALL=en_US.UTF-8;
+
+if [ ! -e package.json ]
+then
+  exit 1;
+fi;
+
+test -e .meteor/meteor && rm .meteor/meteor
+ln -s /usr/local/bin/meteor .meteor/meteor
+
+meteor npm i;
+meteor run --production --port $PORT;

@@ -1,0 +1,10 @@
+orga-tool:
+  image: basti1253/meteor-docker-dev
+  container_name: meteor
+  volumes:
+  - /path/to/project/:/home/node/app/
+  ports:
+  - 3000:3000
+  #restart: unless-stopped
+
+
