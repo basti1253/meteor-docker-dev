@@ -17,4 +17,4 @@ test -e .meteor/meteor && rm .meteor/meteor
 ln -s /usr/local/bin/meteor .meteor/meteor
 
 meteor npm i;
-meteor run --production --port $PORT;
+meteor run --port $PORT;
