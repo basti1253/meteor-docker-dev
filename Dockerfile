@@ -2,8 +2,8 @@
 FROM node:4.6
 MAINTAINER Sebastian Sauer <info@dynpages.de>
 
-ENV REFRESHED_AT="2016-02-24" \
-  METEOR_VERSION=1.4.2.7 \
+ENV REFRESHED_AT="2016-02-25" \
+  METEOR_VERSION=1.4.3.1 \
   USER=node \
   USERID=1000 \
   PORT=3000 \
