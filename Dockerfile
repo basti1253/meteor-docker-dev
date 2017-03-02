@@ -27,7 +27,7 @@ USER root
 ADD meteor-run /usr/local/bin/
 
 RUN chmod a+x /usr/local/bin/meteor-run \
-  && cp "/home/$USER/.meteor/packages/meteor-tool/1.4.2_3/mt-os.linux.x86_64/scripts/admin/launch-meteor" /usr/local/bin/meteor \
+  && cp "/home/$USER/.meteor/packages/meteor-tool/1.4.3_1/mt-os.linux.x86_64/scripts/admin/launch-meteor" /usr/local/bin/meteor \
   && chmod a+x /usr/local/bin/meteor;
 
 RUN apt-get update \
